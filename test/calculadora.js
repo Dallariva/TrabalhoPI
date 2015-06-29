@@ -270,16 +270,16 @@ describe('Calculadora', function() {
 	});
 
 	describe('tijolosComuns5cm', function() {
-			it('Deveria retornar 18,2 quando inserir  7.', function() {
+			it('Deveria retornar 3358 quando inserir  73.', function() {
 				var parametros = {
-					numero1: 7,
+					numero1: 73,
 					operacao: 'tijolosComuns5cm'
 				};
 				
 				var resultado = controller.utils.calculos.calcular(parametros);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(18.2);
+				resultado.should.be.equal(3358);
 			});
 	});
 
@@ -349,7 +349,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.calcular(parametros);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(1504);
+				resultado.should.be.equal(322);
 			});
 	});
 
@@ -382,17 +382,17 @@ describe('Calculadora', function() {
 	});
 
 	describe('acrilicaEconomica', function() {
-			it('Deveria retornar 8300 quando inserir 50 e 20.', function() {
+			it('Deveria retornar 50 quando inserir 50 e 8.3.', function() {
 				var parametros = {
 					numero1: 50,
-					numero2: 20,
+					numero2: 8.3,
 					operacao: 'acrilicaEconomica'
 				};
 				
 				var resultado = controller.utils.calculos.calcular(parametros);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(8300);
+				resultado.should.be.equal(50);
 			});
 	});
 
@@ -519,7 +519,7 @@ describe('Calculadora', function() {
 	describe('vernizAcrilico', function() {
 			it('Deveria retornar 86 quando inserir 43 e 25.', function() {
 				var parametros = {
-					numero1: 86,
+					numero1: 43,
 					numero2: 25,
 					operacao: 'vernizAcrilico'
 				};
