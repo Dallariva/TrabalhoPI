@@ -223,4 +223,311 @@ describe('Calculadora', function() {
 			});
 		});
 	});
+
+	describe('telhaFrancesa', function() {
+			it('Deveria retornar 12,8 quando inserir 2 e 4.', function() {
+				var parametros = {
+					numero1: 2,
+					numero2: 4,
+					operacao: 'telhaFrancesa'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(12.8);
+			});
+	});
+
+	describe('telhaPaulista', function() {
+			it('Deveria retornar 157,5 quando inserir 7 e 9.', function() {
+				var parametros = {
+					numero1: 7,
+					numero2: 9,
+					operacao: 'telhaPaulista'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(157.5);
+			});
+	});
+
+	describe('telhaPlan', function() {
+			it('Deveria retornar 39 quando inserir 5 e 3.', function() {
+				var parametros = {
+					numero1: 5,
+					numero2: 3,
+					operacao: 'telhaPlan'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(39);
+			});
+	});
+
+	describe('tijolosComuns5cm', function() {
+			it('Deveria retornar 18,2 quando inserir  7.', function() {
+				var parametros = {
+					numero1: 7,
+					operacao: 'tijolosComuns5cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(18.2);
+			});
+	});
+
+	describe('tijolosComuns10cm', function() {
+			it('Deveria retornar 1596 quando inserir  19.', function() {
+				var parametros = {
+					numero1: 19,
+					operacao: 'tijolosComuns10cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1596);
+			});
+	});
+
+	describe('tijolosComuns20cm', function() {
+			it('Deveria retornar 1937 quando inserir  13.', function() {
+				var parametros = {
+					numero1: 13,
+					operacao: 'tijolosComuns20cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1937);
+			});
+	});
+
+	describe('tijolosCeramicos10cm', function() {
+			it('Deveria retornar 1825 quando inserir  73.', function() {
+				var parametros = {
+					numero1: 73,
+					operacao: 'tijolosCeramicos10cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1825);
+			});
+	});
+
+	describe('tijolosCeramicos20cm', function() {
+			it('Deveria retornar 1504 quando inserir  32.', function() {
+				var parametros = {
+					numero1: 32,
+					operacao: 'tijolosCeramicos20cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1504);
+			});
+	});
+
+	describe('blocosDeConcreto10cm', function() {
+			it('Deveria retornar 322 quando inserir  23.', function() {
+				var parametros = {
+					numero1: 23,
+					operacao: 'blocosDeConcreto10cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1504);
+			});
+	});
+
+	describe('blocosDeConcreto15cm', function() {
+			it('Deveria retornar 765 quando inserir  45.', function() {
+				var parametros = {
+					numero1: 45,
+					operacao: 'blocosDeConcreto15cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(765);
+			});
+	});
+
+	describe('blocosDeConcreto20cm', function() {
+			it('Deveria retornar 1113 quando inserir  53.', function() {
+				var parametros = {
+					numero1: 53,
+					operacao: 'blocosDeConcreto20cm'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1113);
+			});
+	});
+
+	describe('acrilicaEconomica', function() {
+			it('Deveria retornar 8300 quando inserir 50 e 20.', function() {
+				var parametros = {
+					numero1: 50,
+					numero2: 20,
+					operacao: 'acrilicaEconomica'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(8300);
+			});
+	});
+
+	describe('acrilicaPremiumAcetinado', function() {
+			it('Deveria retornar 1 quando inserir 5 e 2.', function() {
+				var parametros = {
+					numero1: 5,
+					numero2: 2,
+					operacao: 'acrilicaPremiumAcetinado'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(1);
+			});
+	});
+
+	describe('acrilicaPremiumFosco', function() {
+			it('Deveria retornar 90 quando inserir 90 e 21.', function() {
+				var parametros = {
+					numero1: 90,
+					numero2: 21,
+					operacao: 'acrilicaPremiumFosco'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(90);
+			});
+	});
+
+	describe('acrilicaStandard', function() {
+			it('Deveria retornar 57 quando inserir 57 e 13.8.', function() {
+				var parametros = {
+					numero1: 57,
+					numero2: 13.8,
+					operacao: 'acrilicaStandard'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(57);
+			});
+	});
+
+	describe('esmaltePremium', function() {
+			it('Deveria retornar 77 quando inserir 77 e 11.', function() {
+				var parametros = {
+					numero1: 77,
+					numero2: 11,
+					operacao: 'esmaltePremium'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(77);
+			});
+	});
+
+	describe('latexPremium', function() {
+			it('Deveria retornar 85 quando inserir 85 e 16.6.', function() {
+				var parametros = {
+					numero1: 85,
+					numero2: 16.6,
+					operacao: 'latexPremium'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(85);
+			});
+	});
+
+	describe('latexStandard', function() {
+			it('Deveria retornar 190 quando inserir 190 e 12.5.', function() {
+				var parametros = {
+					numero1: 190,
+					numero2: 12.5,
+					operacao: 'latexStandard'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(190);
+			});
+	});
+
+	describe('tintaParaGesso', function() {
+			it('Deveria retornar 156 quando inserir 78 e 13.', function() {
+				var parametros = {
+					numero1: 78,
+					numero2: 13,
+					operacao: 'tintaParaGesso'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(156);
+			});
+	});
+
+	describe('tintaParaPiso', function() {
+			it('Deveria retornar 126 quando inserir 63 e 11.', function() {
+				var parametros = {
+					numero1: 63,
+					numero2: 11,
+					operacao: 'tintaParaPiso'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(126);
+			});
+	});
+
+	describe('vernizAcrilico', function() {
+			it('Deveria retornar 86 quando inserir 43 e 25.', function() {
+				var parametros = {
+					numero1: 86,
+					numero2: 25,
+					operacao: 'vernizAcrilico'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(86);
+			});
+	});
 });
